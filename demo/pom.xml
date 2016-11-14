@@ -218,34 +218,12 @@
 		</dependencies>
 
 	</dependencyManagement>
-	<!-- default jdk 1.7 x64 -->
-	<profiles>
-		<profile>
-			<id>jdk-1.7</id>
-			<activation>
-				<activeByDefault>true</activeByDefault>
-				<jdk>1.7</jdk>
-			</activation>
-			<properties>
-				<maven.compiler.source>1.7</maven.compiler.source>
-				<maven.compiler.target>1.7</maven.compiler.target>
-				<maven.compiler.compilerVersion>1.7</maven.compiler.compilerVersion>
-			</properties>
-		</profile>
-	</profiles>
 
-	<repositories>
-		<repository>
-			<id>nexus-local</id>
-			<url>http://180.166.211.212:8086/nexus/content/groups/public/</url>
-		</repository>
-	</repositories>
 	<modules>
 		<module>demo-json</module>
 		<module>demo-httpclient</module>
 		<module>demo-springmvc</module>
 		<module>demo-mybatis</module>
-		<module>demo-springmybatis</module>
 		<module>demo-quartz</module>
 		<module>demo-springScheduled</module>
 		<module>demo-xmemcached</module>
